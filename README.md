@@ -24,7 +24,11 @@ php app/console cache:clear
 
 #### Include slider javascript file
 
+>**NOTE**
+>You must have jquery library included
+
 ```js
+<script type="text/javascript" src="/a path to jquery"></script>
 <script type="text/javascript" src="{{ asset('bundles/sfknivoslider/nivo-slider/jquery.nivo.slider.pack.js') }}"></script>
 ```
 
