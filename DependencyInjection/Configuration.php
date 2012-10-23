@@ -20,26 +20,6 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('sfk_nivo_slider');
 
-
-        $rootNode
-            ->children()
-                ->arrayNode('providers')
-                ->isRequired()
-                ->requiresAtLeastOneElement()
-                ->prototype('array')
-                    ->children()
-                        ->scalarNode('type')
-                            ->isRequired()
-                            ->validate()
-                                ->ifNotInArray(array('controller'))
-                                ->thenInvalid('Invalid source type "%s"')
-                            ->end()
-                        ->end()    
-                        ->scalarNode('source')->isRequired()->end()
-                        ->arrayNode('options')->end()
-                ->end()
-        ;
-        
         return $treeBuilder;
     }
 
