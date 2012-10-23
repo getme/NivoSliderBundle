@@ -9,12 +9,27 @@ jQuery Nivo Slider plugin integration for Symfony2
 php composer.phar require sfk/nivo-slider-bundle:dev-master
 ```
 
+### Register bundle in your application kernel
+
+```php
+// app/AppKernel.php
+public function registerBundles() 
+{
+    $bundles = array(
+        // ...
+        new Sfk\NivoSliderBundle\NivoSliderBundle(),
+    );
+}
+```
+
 ### Install assets and clear cache
 
 ```bash
 php app/console assets:install --symlink target/
 php app/console cache:clear
 ```
+
+
 
 ### Include theme css file
 
