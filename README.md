@@ -17,7 +17,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Sfk\NivoSliderBundle\NivoSliderBundle(),
+        new Sfk\NivoSliderBundle\SfkNivoSliderBundle(),
     );
 }
 ```
