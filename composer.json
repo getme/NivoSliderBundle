@@ -1,0 +1,24 @@
+{
+    "name": "sfk/nivo-slider-bundle",
+    "type": "symfony-bundle",
+    "description": "jQuery Nivo Slider plugin integration for symfony.",
+    "keywords": ["image slider","nivo", "slider", "jquery"],
+    "homepage": "http://github.com/getme/NivoSliderBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Khussainov",
+            "email": "oleg@hireoleg.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": ">=2.0,<2.3-dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sfk\\NivoSliderBundle": ""
+        }
+    },
+    "target-dir": "Sfk/NivoSliderBundle"
+}

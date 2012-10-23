@@ -1,0 +1,17 @@
+## Installation
+
+#### Include theme css file
+
+```html
+<link rel="stylesheet" href="{{ asset('bundles/sfknivoslider/nivo-slider/themes/default/default.css') }}" type="text/css" media="screen" />
+```
+
+#### Include slider javascript file
+
+```html
+<script type="text/javascript" src="{{ asset('bundles/sfknivoslider/nivo-slider/jquery.nivo.slider.pack.js') }}"></script>
+```
+
+## License
+
+Refer to the source code of the included files
